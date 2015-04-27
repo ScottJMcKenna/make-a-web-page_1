@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Scott McKenna</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<!-- This is an HTML comment -->
+
+<head>
+  <title>Scott's Notes</title>
+
+  <body>
+    <h1>Important Concepts</h1>
+    <div class="lesson">
+      <h2>Lesson 1: The Basics of the Web and HTML</h2>
+      <div class="concept">
+        <div class="concept-title">
+          <h3>5 Ways to Think Like a Programmer</h3>
+        </div>
+        <ol>
+          <li>
+            <h4>Procedural Thinking</h4> Procedural thinking involves creating perfectly clear and unambiguous instructions for a computer to follow. It may be easy to tell a person how to sort a deck of cards, but getting a computer to do that requires more thought. But once you've
+            learned to think this way you'll find that computers can do it <b>much</b> faster.
+            <li>
+              <h4>Abstract Thinking</h4> Abstract thinking means finding similarity, or as programmers would say, <b>generality</b> amongst seemingly different things.In this Nanodegree you will visit hundreds of Udacity web pages. It would be impractical for a programmer to specifically
+              program each of these pages individually. The Udacity programmers used the power of what's called abstraction to avoid unnecessary repetition of work.
+              <li>
+                <h4>Systems Thinking</h4> Systems thinking happens when you break a big problem down into smaller pieces. Programmers do this when they create a plan (often on paper) for how a program will work. It involves big-picture thinking and decision-making about a problem
+                and how different pieces of a program can work together to solve it. If this is unclear now, don't worry! You'll understand what this means much more clearly by the end of the Nanodegree.
+                <li>
+                  <h4>Technological Empathy</h4> "Technological empathy" comes in many forms. For example, computer empathy is the ability to understand what a computer is, how it works, and what it's good and bad at doing. A computer is a tool, as are the programs we use and the
+                  programming languages used to write them. It's almost impossible to program anything substantial without a basic understanding of how these tools work.
+                  <li>
+                    <h4>Debugging</h4> Debugging is a systematic process of relentlessly identifying the cause of a computer program that doesn't work. When a program doesn't work, it's because there is a mistake (also known as a "bug") somewhere in the computer code.
+                    Since these mistakes are an unavoidable part of programming, every good programmer has a system for fixing them and that system usually looks something like this:
+                    <br>
+                    <br>1. Collect evidence (what makes this program fail?)
+                    <br>2. Generate theories (what may have caused this problem?)
+                    <br>3. Test those theories (if my theory is correct, how could I find out?)
+                    <br>4. Fix the problem
+        </ol>
+      </div>
+      <div>
+        <div class="concept">
+          <div class="concept-title">
+            <h4>Web Pages, Documents, and Structure</h4>
+            <div class="concept-description">
+              <h4>The Web</h4>
+            </div>
+          </div>
+          <p>
+            The Web is essentially a collection of HTML documents. Files hosted on The Web include: plain text, HTML, images, video, and music.
+          </p>
+          <p>
+            The Web works starting with you, and works through your computer/browser, to the internet, HTTP, the servers that host your requested infomation, and then returns on the same path back to you. A web page is a text document written in a language called
+            HTML. Web browsers read these documents, and then interpret and display them.
+          </p>
+          <div class="concept">
+            <div class="concept-title">
+              <h4>HTML</h4>
+            </div>
+            <div class="concept-description">
+              <p>
+                HTML --HyperText Markup Language-- is the language of coding, and is made up of text content (what you see), markup (how it's arranged), references to other files (images or video), and links to other pages.
+              </p>
+              <p>
+                HTML Markup consists of tags. And Tags consist of an opening tag, the content that it effects, and then a closing tag. Some examples of tags include:
+              </p>
+              <p>
+                The B Tag --<b>bold</b>-- &lt;b&gt;CONTENT&lt;/b&gt;
+              </p>
+              <p>
+                <b>The Em Tag</b> --<em>emphasis</em>-- &lt;em&gt;CONTENT&lt;/em&gt;
+              </p>
+              <p>
+                It's often a good idea to make your closing tag as soon as you make your opening tag so that you don't cause any unexpected problems. Some text editors will automatically generate closing tags so that you don't forget.
+              </p>
+              <p>
+                <b>Anchor Tags</b> -- to create a link in HTML the code would begin with an Anchor Tag and be written like this:
+                <br>&lt;a href="www.chirpradio.org"&gt;CHIRP&lt;/a&gt; <em><b>and appear as this: </b></em><a href="www.chirpradio.org">CHIRP</a>
+              </p>
+              <p>
+                <b>Image Tags</b> -- to add an image to an HTML document you would use an image tag structured like this:
+                <br>&lt;img src="url"alt="text"&gt; <em><b>and it would appear as this:</b></em> <img src="data:image/jpeg;base64,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"
+                alt="Me">
+              </p>
+              <p>
+                Image tags do not require a closing tag because they are --what is known as-- a Void Tag.
+              </p>
+              <p>
+                You may be wondering why anchor tags use the href attribute while img tags use the src attribute. And you may become frustrated when (not if) you make the mistake of using one when you really need the other. Because when you make this mistake, your HTML
+                will <b>not</b> work.
+              </p>
+              <p>
+                <b>Break Tags</b> --The proper use of Whitespace will allow you to either display multiple lines of text or display them on a single line. For single lines of text you would use a &lt;br&gt; tag --or a Break Tag. A Break Tag is considered
+                an Inline Element, the same as a B Tag, Em Tag, or a Image Tag.
+              </p>
+              <p>
+                <b>P Tags</b> --for text that will require some space, kind of like a text box, a P tag: &lt;p&gt; --or a Paragraph Tag-- would be appropriate. A Paragraph Tag is considered a Block Element since a paragraph will have both height and width.
+              </p>
+              <p>
+                <b>HTML Attributes</b>
+                <br>An HTML Attribute is structured like this: &lt;tag attr="value"&gt;CONTENT&lt;/tag&gt;
+              </p>
+              <p>
+                <b>Container Elements</b>
+                <br>Other Inline Elements, like Break Tags, are: Anchor Tags ("a"), Span (class="foo"), Strong Tags, and IMG Tags.
+                <br>Other Block Elements, like a Paragraph Tag are: DIV Tags (class="bar"), and Form Tags.
+              </p>
+            </div>
+          </div>
+          <div>
+            <p>
+              <div class="concept">
+                <div class="concept-title">
+                  <h4>Components of a HTML Document</h4>
+                </div>
+                <div class="concept-description">
+                  <ol>
+                    <li>&lt;!doctype html&gt; - document type
+                      <li>&lt;html&gt; - tag
+                      <li>&lt;head&gt; - head - metadata - javascript, css included here
+                      <li>&lt;title&gt;title!&lt;/title&gt; - title
+                      <li>&lt;/head&gt;
+                      <li>&lt;body&gt; - body
+                      <li>&lt;b&gt;content&lt;/b&gt;
+                      <li>&lt;/body&gt;
+                      <li>&lt;/html&gt; - closing tag
+                  </ol>
+            </div>
+            <div class="concept">
+              <div class="concept-title">
+                <h4>Knowledge and Experience Gaps</h4>
+              </div>
+              <div class="concept-description">
+                <p>
+                  <b>Knowledge Gaps</b>
+                  <br>Novice - see scattered facts
+                  <br>Expert - sees logical structure
+                  <br>
+                  <br><b>Experience Gaps</b>
+                  <br>Novice - has good ideas
+                  <br>Expert - has the ability to execute
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2>Lesson 2: Creating a Structured Document with HTML</h2>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>Tools</h4>
+        </div>
+        <p>
+          <b>HTML</b> --this language is like a house, a structure. Text written in a document follinw its own rules & syntax as opposed to traditional grammar. A basic word in this language is called a Tag. The browser then turns this into a tree.
+        </p>
+        <p>
+          <b>CSS</b> --is the decoration and interior design.This defines how elements will look on the page using it's own syntax & rules - font, color, position, etc.
+        </p>
+        <p>
+          <b>Java Script</b> --is the appliance that makes things work.
+        </p>
+        <b>DOM</b>
+        <p>
+          HTML and CSS are both languages. HTML controls the structure of a web page, and CSS controls the style --how it looks. When Programmers talk about the "DOM", they are talking about the tree-like structure.
+        </p>
+        <p>
+          The "tree-like structure" comes from the fact that HTML elements can have other elements inside of them. You can draw this relationship like a family tree. My mother had multiple children. So did her mother, and so on... In a browser, this structure shows
+          up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on...
+        </p>
+        <b>Boxes</b>
+        <p>
+          All web pages can be broken down visiaully into groups of individual boxes. Looking at any web page, a programmer will begin by seeing the bigger boxes --header, body, footer, etc.-- and then will be able to view smaller content therein as individual
+          boxes unto themselves. When you read an HTML document as text, you see a wave of changing indentations going up and down the left side of the document. The more indented an element is, the more deeply nested it's corresponding "box" is.
+        </p>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2>Lesson 3: Adding CSS Style to HTML Structure</h2>
+      <div class="concept">
+        <div class="concept-title">
+          <h4>Utilizing CSS to Avoid Repetition</h4>
+        </div>
+        <p>
+          CSS --Cascading Style Sheets-- allows programmers to avoid unecessary repetition by applying a style consistenly across all HTML elements, that they assign to a unique class. Since each page is made up of many elements, the programmer can give each one
+          its own look according the design requirements of her/himself or of the needs of a client. By enabling a set of stylistic rules for every element within a given class, the need for the programmer to format each element individually is eliminated.
+          This saves, time, cost, and streamlines the troubleshooting process for any obvious errors.
+        </p>
+      </div>
+    </div>
+  </body>
+
+</body>
+
+</html>
